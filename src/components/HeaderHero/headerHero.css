@@ -1,0 +1,22 @@
+.header-hero-mobile {
+    display: none;
+}
+  
+.header-hero-desktop {
+    display: none;
+}
+  
+@media (max-width: 600px) {
+    .header-hero-mobile {
+      display: flex;
+      width: 100%;
+    }
+}
+  
+@media (min-width: 601px) {
+    .header-hero-desktop {
+      display: block;
+      width: 100%;
+    }
+}
+  
