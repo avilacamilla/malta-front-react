@@ -56,16 +56,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 12rem;
+        width: 15rem;
         margin: 2rem 0 0 1rem;
-        padding: .8rem 0;
+        padding: 1.15rem 0;
         border: none;
         border-radius: 2rem;
         background-color: #4068e9;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 500;
         color: #FAFAFA;
+        letter-spacing: .02rem;
         cursor: pointer;
+    }
+
+    .header-hero-button::after {
+        content: '➝';
+        margin: 0 0 0 .6rem;
+        font-size: 1rem;
+        color: #FAFAFA;
     }
       
     .header-hero-button:hover {
