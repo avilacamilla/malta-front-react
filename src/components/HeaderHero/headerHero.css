@@ -7,9 +7,68 @@
 }
   
 @media (max-width: 600px) {
+    .header-hero-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
     .header-hero-mobile {
-      display: flex;
-      width: 100%;
+        display: flex;
+        width: 100%;
+    }
+      
+    .header-hero-image {
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+      
+    .header-hero-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 30% 0 0 0;
+        position: absolute;
+        
+    }
+
+    .header-hero-description {
+        padding: 0 0 0 1rem;
+        margin: 0;
+        font-size: 1.2rem;
+        color: #FAFAFA;
+        
+    }
+      
+    .header-hero-title {
+        padding: 1rem 0 0 1rem;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #FAFAFA;
+        width: 68%;
+    }
+      
+      
+    .header-hero-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12rem;
+        margin: 2rem 0 0 1rem;
+        padding: .8rem 0;
+        font-size: 1rem;
+        color: #FAFAFA;
+        border: none;
+        border-radius: 2rem;
+        background-color: #4068e9;
+        cursor: pointer;
+    }
+      
+    .header-hero-button:hover {
+        background-color:  #4068e9e1;
     }
 }
   
@@ -17,6 +76,23 @@
     .header-hero-desktop {
       display: block;
       width: 100%;
+    }
+}
+
+
+
+
+
+  
+@media (max-width: 600px) {
+    .header-hero-mobile {
+      display: block;
+    }
+}
+  
+@media (min-width: 601px) {
+    .header-hero-desktop {
+      display: block;
     }
 }
   
