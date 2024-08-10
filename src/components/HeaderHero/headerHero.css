@@ -59,11 +59,12 @@
         width: 12rem;
         margin: 2rem 0 0 1rem;
         padding: .8rem 0;
-        font-size: 1rem;
-        color: #FAFAFA;
         border: none;
         border-radius: 2rem;
         background-color: #4068e9;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #FAFAFA;
         cursor: pointer;
     }
       
