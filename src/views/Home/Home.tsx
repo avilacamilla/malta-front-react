@@ -4,6 +4,7 @@ import DesktopBackgroundImage from '../../assets/images/desktop-header-hero.png'
 import HeaderHero from '../../components/HeaderHero/HeaderHero';
 import './home.css';
 import useHome from './useHome';
+import Navbar from '../../components/Navbar/Navbar';
 
 const Home: React.FC = () => {
   const { onButtonClick } = useHome();
@@ -12,7 +13,7 @@ const Home: React.FC = () => {
     <div className="home-container">
       <header className="home-header-container">
         <nav className="home-header-nav-container">
-          {/* Your navigation components */}
+          <Navbar />
         </nav>
         <HeaderHero
           mobileBackgroundImage={MobileBackgroundImage}
