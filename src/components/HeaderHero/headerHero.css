@@ -7,114 +7,114 @@
     }
 }
 
-.header-hero-mobile {
-    display: none;
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-  
+
+.header-hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-hero-mobile,
 .header-hero-desktop {
     display: none;
+    width: 100%;
+    height: auto;
 }
-  
-@media (max-width: 600px) {
-    .header-hero-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
 
+.header-hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.header-hero-description {
+    padding: 0 0 0 1rem;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #FAFAFA;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.header-hero-title {
+    padding: 1rem 0 0 1rem;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FAFAFA;
+    width: 68%;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+.header-hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    margin: 2rem 0 0 1rem;
+    padding: 1.15rem 0;
+    border: none;
+    border-radius: 2rem;
+    background-color: #4068e9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #FAFAFA;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    animation-delay: 2s;
+}
+
+.header-hero-button::after {
+    content: '➝';
+    margin: 0 0 0 .6rem;
+    font-size: 1rem;
+    color: #FAFAFA;
+}
+
+.header-hero-button:hover {
+    background-color: #4068e9e1;
+}
+
+@media (max-width: 600px) {
     .header-hero-mobile {
         display: flex;
-        width: 100%;
-        height: auto;
-        animation: zoomIn 10s ease-in-out infinite;
-        animation-direction: alternate;
+        animation: zoomIn 10s ease-in-out infinite alternate;
     }
-      
-    .header-hero-image {
+
+    .header-hero-desktop {
         display: none;
-        width: 100%;
-        height: auto;
-    }
-      
-    .header-hero-content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin: 30% 0 0 0;
-        position: absolute;
-        
-    }
-
-    .header-hero-description {
-        padding: 0 0 0 1rem;
-        margin: 0;
-        font-size: 1.2rem;
-        color: #FAFAFA;
-        
-    }
-      
-    .header-hero-title {
-        padding: 1rem 0 0 1rem;
-        margin: 0;
-        font-size: 2rem;
-        font-weight: 500;
-        color: #FAFAFA;
-        width: 68%;
-    }
-      
-      
-    .header-hero-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 15rem;
-        margin: 2rem 0 0 1rem;
-        padding: 1.15rem 0;
-        border: none;
-        border-radius: 2rem;
-        background-color: #4068e9;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 1.05rem;
-        font-weight: 500;
-        color: #FAFAFA;
-        letter-spacing: .02rem;
-        cursor: pointer;
-    }
-
-    .header-hero-button::after {
-        content: '➝';
-        margin: 0 0 0 .6rem;
-        font-size: 1rem;
-        color: #FAFAFA;
-    }
-      
-    .header-hero-button:hover {
-        background-color:  #4068e9e1;
     }
 }
-  
+
 @media (min-width: 601px) {
-    .header-hero-desktop {
-      display: block;
-      width: 100%;
-    }
-}
-
-
-
-
-
-  
-@media (max-width: 600px) {
     .header-hero-mobile {
-      display: block;
+        display: none;
     }
-}
-  
-@media (min-width: 601px) {
+
     .header-hero-desktop {
-      display: block;
+        display: block;
+        animation: zoomIn 10s ease-in-out infinite alternate;
     }
 }
-  
