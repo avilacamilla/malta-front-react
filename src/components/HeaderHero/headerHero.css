@@ -1,3 +1,12 @@
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
 .header-hero-mobile {
     display: none;
 }
@@ -17,6 +26,9 @@
     .header-hero-mobile {
         display: flex;
         width: 100%;
+        height: auto;
+        animation: zoomIn 10s ease-in-out infinite;
+        animation-direction: alternate;
     }
       
     .header-hero-image {
