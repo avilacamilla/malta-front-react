@@ -17,9 +17,9 @@ const Home: React.FC = () => {
         <HeaderHero
           mobileBackgroundImage={MobileBackgroundImage}
           desktopBackgroundImage={DesktopBackgroundImage}
-          title="Empresa de inovação digital que cria progresso."
+          title="Empresa de Inovação Digital que cria Progresso."
           description="Descubra recursos incríveis."
-          buttonText="Começar agora"
+          buttonText="Inicie agora mesmo"
           onButtonClick={onButtonClick}
           altText="Header Image"
         />
