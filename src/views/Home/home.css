@@ -16,5 +16,24 @@
         width: 100%;
         /* background-color: pink; */
     }
+
+    .home-main-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .home-main-services-cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 90%;
+        margin: 2rem 0;
+        padding: 4rem 0 2rem 0;
+        border-radius: .3rem;
+        background-color: #4068e9;
+        box-shadow: .1rem .2rem 1rem .05rem #0000005e;
+    }
 }
 
