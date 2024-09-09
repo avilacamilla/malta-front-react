@@ -5,6 +5,7 @@ import HeaderHero from '../../components/HeaderHero/HeaderHero';
 import './home.css';
 import useHome from './useHome';
 import Navbar from '../../components/Navbar/Navbar';
+import ServicesCards from '../../components/ServicesCards/ServicesCards';
 
 const Home: React.FC = () => {
   const { onButtonClick } = useHome();
@@ -25,7 +26,16 @@ const Home: React.FC = () => {
           altText="Header Image"
         />
       </header>
-      <main className="home-main-container">Main aqui</main>
+      <main className="home-main-container">
+        <section className="home-main-services-cards-container">
+          <ServicesCards 
+            icon='ícone'
+            title='Meu título'
+            paragraph='Já deu tudo certo'
+            altText='texto de ajuda aqui'
+          />
+        </section>
+      </main>
       <footer className="home-footer-container">Rodapé aqui</footer>
     </div>
   );
