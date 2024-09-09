@@ -6,6 +6,8 @@ import './home.css';
 import useHome from './useHome';
 import Navbar from '../../components/Navbar/Navbar';
 import ServicesCards from '../../components/ServicesCards/ServicesCards';
+import servicesCardData from '../../components/ServicesCards/servicesCardsData';
+import { ServiceCard } from '../../types/ServicesCards';
 
 const Home: React.FC = () => {
   const { onButtonClick } = useHome();
@@ -21,19 +23,23 @@ const Home: React.FC = () => {
           desktopBackgroundImage={DesktopBackgroundImage}
           title="Empresa de Inovação Digital que cria Progresso."
           description="Descubra recursos incríveis."
-          buttonText="Inicie agora mesmo"
+          buttonText="Conheça os recursos"
           onButtonClick={onButtonClick}
           altText="Header Image"
         />
       </header>
       <main className="home-main-container">
         <section className="home-main-services-cards-container">
-          <ServicesCards 
-            icon='ícone'
-            title='Meu título'
-            paragraph='Já deu tudo certo'
-            altText='texto de ajuda aqui'
-          />
+          {servicesCardData.map((serviceCard: ServiceCard) => (
+            <ServicesCards
+              key={serviceCard.id}
+              id={serviceCard.id}
+              icon={serviceCard.icon}
+              title={serviceCard.title}
+              paragraph={serviceCard.paragraph}
+              altText={serviceCard.altText}
+            />
+          ))}
         </section>
       </main>
       <footer className="home-footer-container">Rodapé aqui</footer>
