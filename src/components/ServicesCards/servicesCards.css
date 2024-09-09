@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+    .services-cards-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 3rem 0;
+        width: 90%;
+        color: #fff;
+    }
+
+    .services-cards-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-cards-content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-cards-content-header-icon {
+        width: 15%;
+        opacity: .9;
+    }
+
+    .services-cards-content-header-title {
+        font-size: 1.2rem;
+    }
+
+    .services-cards-content-header-paragraph {
+        width: 12rem;
+        margin: 0;
+        font-size: .98rem;
+        text-align: center;
+        line-height: 1.6rem;
+        opacity: .8;
+    }
+}
