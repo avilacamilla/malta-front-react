@@ -70,11 +70,12 @@
     justify-content: center;
     align-items: center;
     width: 15rem;
-    margin: 2rem 0 0 1rem;
+    margin: 2rem 0 0 .5rem;
     padding: 1.15rem 0;
     border: none;
     border-radius: 2rem;
     background-color: #4068e9;
+    font-family: "SUSE", sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
     color: #FAFAFA;
@@ -100,6 +101,41 @@
     .header-hero-mobile {
         display: flex;
         animation: zoomIn 10s ease-in-out infinite alternate;
+    }
+
+    .header-hero-content {
+        margin: 8rem 0 0 0;
+    }
+
+    .header-hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .header-hero-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 64%;
+    }
+    
+    .header-hero-button {
+        width: 13rem;
+        margin: 2rem 0 0 .8rem;
+        padding: .9rem 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FAFAFA;
+        letter-spacing: .02rem;
+    }
+    
+    .header-hero-button::after {
+        content: '➝';
+        margin: 0 0 0 .6rem;
+        font-size: 1rem;
+        color: #FAFAFA;
+    }
+    
+    .header-hero-button:hover {
+        background-color: #4068e9e1;
     }
 
     .header-hero-desktop {
